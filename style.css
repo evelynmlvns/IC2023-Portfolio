@@ -35,23 +35,57 @@ body{
 .abtMe{
     text-shadow: 2px 2px #EFCFF3;
 }
+.abtMe:hover{
+    background-color: white;
+    border: 4px solid black;
+    width: fit-content;
+}
 
 .accomplishments{
     text-shadow: 2px 2px lightgoldenrodyellow;
+}
+.accomplishments:hover{
+    background-color: white;
+    border: 4px solid black;
+    width:fit-content;
 }
 
 .hobbies{
     text-shadow: 2px 2px #CCF4BB;
 }
+.hobbies:hover{
+    background-color: white;
+    border: 4px solid black;
+    width: fit-content;
+}
 
 .plans{
     text-shadow: 2px 2px #B0DDF3;
+}
+.plans:hover{
+    background-color: white;
+    border: 4px solid black;
+    width: fit-content;
 }
 
 .projects{
     text-shadow: 2px 2px lightcoral;
 }
+.projects:hover{
+    background-color: white;
+    border: 4px solid black;
+    width: fit-content;
+}
 
+
+
+/*contact Info button*/
+.contact{
+    background-color: white;
+    border-radius: 5px;
+    border: 7px double black;
+    font-size: 15px;
+}
 
 
 
@@ -136,15 +170,19 @@ h2{
 }
 
 
-/*about me nav bars color 
+/*nav bars color 
 and border as well as hover color changes*/
 .homeBar1{
     background-color: #d1bb94;
     border-right: 3px solid white;
+    color: black;
 } 
+.homeBar1 a{
+    text-decoration: none;
+}
 .homeBar1:hover{
-background-color: grey;
-color: white;
+    background-color: grey;
+    color: white;
 }
 
 .abtMeBar1{
@@ -155,6 +193,9 @@ color: white;
     background-color: grey;
     color: white;
 }
+.abtMeBar1 a{
+    text-decoration: none;
+}
 
 .accomplishmentsBar1{
     background-color: lightgoldenrodyellow;
@@ -163,6 +204,9 @@ color: white;
 .accomplishmentsBar1:hover{
 background-color: grey;
 color: white;
+}
+.accomplishmentsBar1 a{
+    text-decoration: none;
 }
 
 .hobbiesBar1{
@@ -173,14 +217,20 @@ color: white;
     background-color: grey;
     color: white;
 }
+.hobbiesBar1 a{
+    text-decoration: none;
+}
 
-.careerBar1{
+.careersBar1{
     background-color: #B0DDF3;
     border-right: 3px solid white;
 }
-.careerBar1:hover{
+.careersBar1:hover{
     background-color: grey;
     color: white;
+}
+.careersBar1 a{
+    text-decoration: none;
 }
 
 .projectsBar1{
@@ -190,6 +240,10 @@ color: white;
 background-color: grey;
 color: white;
 }
+.projectsBar1 a{
+    text-decoration: none;
+}
+
 
 
 /*Accomplishments Page (third page) content setup*/
@@ -208,7 +262,7 @@ color: white;
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: 100px;
+    right: -150px;
     border: 4px solid black;
 }
 .accomplishmentsPageContent{
@@ -219,7 +273,8 @@ color: white;
 .accomplishmentsNavBar{
     position: relative;
     top: 0px;
-    width: 205px;
+    right: -4px;
+    width: 212px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -231,18 +286,205 @@ color: white;
     text-align: center;
 }
 
-.academicsText{
-    border: 2px solid red;
-    height: 500px;
-    width: 800px;
+.rowPadding{
     position: relative;
-    top: 150px;
-    right: 200px;
+    top: 100px;
+    right: 480px;
+}
+.academicsText{
+  display: block;  
 }
 .journalismText{
-    border: 2px solid red;
-    height: 500px;
-    width: 800px;
+    display: block;
+}
+.programsText{
+;display: block;
+}
+.workText{
+   display: block; 
+}
+
+
+
+/*hobbies page (fourth page content setup*/
+
+.hobbiesPage{
+    border: 15px solid black;
+    width: 1210px;
+    height: 1300px;
+    border-radius: 20px;
+    background-color: #CCF4BB;
+}
+.hobbiesTitle{
+    height: fit-content;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    background-color: #B0DDF3;
     position: relative;
-    top: 150px
+    top: 20px;
+    right: -200px;
+    border: 4px solid black;
+}
+.hobbiesPageContent{
+    display: flex;
+    justify-content: right;
+}
+
+.hobbiesNavBar{
+    position: relative;
+    top: 0px;
+    right: -6px;
+    width: 212px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    height: 1300px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.rowPadding2{
+    position: relative;
+    top:600px;
+    right: 170px;
+}
+
+.hobbiesText{
+    text-align: center;
+}
+.pad2Text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.skillsText{
+   background-color: orange;
+   width: 200px;
+   position: relative;
+   right: -50px;
+   border-radius: 10px;
+}
+
+/* career plans Page (fifth page)*/
+.careersPage{
+    border: 15px solid black;
+    width: 1210px;
+    height: 1300px;
+    border-radius: 20px;
+    background-color: #B0DDF3;
+}
+.careersTitle{
+    height: fit-content;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    background-color: #B0DDF3;
+    position: relative;
+    top: 20px;
+    right: -475px;
+    border: 4px solid black;
+}
+.careersPageContent{
+    display: flex;
+    justify-content: right;
+}
+
+.careersNavBar{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    height: 1300px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.rowPadding3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    right: 100px;
+    gap: 5px 20px ;
+    height: 350px;
+}
+.careerText1{
+    position: relative;
+    display: flexbox;
+}
+
+
+
+/* Project page content setup (sixth page)*/
+.projectsPage{
+    border: 15px solid black;
+    width: 1210px;
+    height: 1300px;
+    border-radius: 20px;
+    background-color: lightcoral;
+}
+.projectsTitle{
+    height: fit-content;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    background-color: #B0DDF3;
+    position: relative;
+    top: 20px;
+    right: 300px;
+    border: 4px solid black;
+}
+.projectsPageContent{
+    display: flex;
+    justify-content: right;
+}
+
+.projectsNavBar{
+    position: relative;
+    top: 0px;
+    right: -6px;
+    width: 212px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    height: 1300px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*screens displayed when the app is opened
+up at first*/
+.abtMePage{
+    display: none;
+}
+.accomplishmentsPage{
+    display: none;
+}
+.hobbiesPage{
+    display: none;
+}
+.careersPage{
+    display: none;
+}
+.projectsPage{
+    display: none;
 }

@@ -11,7 +11,7 @@
 
 <body>
     <!--(HOMEPAGE (Book Outline and Index headers)-->
-    <div class="homePage">
+    <div class="homePage" id="home">
         <!--Displayed on the left side of the book page outline-->
         <h1 class="nameTitle">Evelyn Luevanos</h1>
         <!-- <img src=""> -->
@@ -19,18 +19,18 @@
         <!--Sections for the right side of the book page-->
         <div class="sections">
             <div class="sectionsContent">
-                <h2 class="abtMe">All About Me</h2>
-                <h2 class="accomplishments">Accomplishments</h2>
-                <h2 class="hobbies">Hobbies</h2>
-                <h2 class="plans">Career Plans</h2>
-                <h2 class="projects">Projects</h2>
-                <h3 class="contactInfo">Contact Info</h3>
+                <h2 class="abtMe" id="abtMeButton">All About Me</h2>
+                <h2 class="accomplishments" id="accomplishmentsButton" >Accomplishments</h2>
+                <h2 class="hobbies" id="hobbiesButton">Hobbies</h2>
+                <h2 class="plans" id="plansButton">Career Plans</h2>
+                <h2 class="projects" id="projectsButton">Projects</h2>
+                <h3 class="contactInfo"><button class="contact">Contact Info</button></h3>
             </div>
         </div>
     </div>
 
     <!-- The About Me Page setup-->
-    <div class="abtMePage">
+    <div class="abtMePage" id="aboutMe">
         <div class="navBarAbtMeContent">
             <h2 class="abtMeTitle">About Me</h2>
             <!-- <h3 class="helloText">Hello and Welcome to my Portfolio</h3> -->
@@ -51,36 +51,192 @@
                 such a young age. But I aspire to one day be an
                 example to young hispanic females. 
             </p>
-
             <div class="navigationBarAbtMePage">
-                <li class="homeBar1"><a href="homePage">Home</a></li>
-                <li class="accomplishmentsBar1"><a href="accomplishmentsPage">Accomplishments</a></li>
-                <li class="hobbiesBar1"><a href="hobbiesPage">Hobbies</a></li>
-                <li class="careerBar1"><a href="careerPage">Career Plans</a></li>
-                <li class="projectsBar1"><a href="projectsPage">Projects</a></li>
+                <li class="homeBar1"><a href="#home">Home</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects">Projects</a></li>
             </div>
         </div>
     </div>
 
 
-    <div class="accomplishmentsPage">
+    <div class="accomplishmentsPage" id="accomplishments">
         <div class="accomplishmentsPageContent">
             <h2 class="accomplishmentsTitle">Accomplishments</h2>
-            <p class="academicsText">I am second in my class</p>
-            <p class="journalismText"></p>
-            <p class="programsText"></p>
-            <p class="workText"></p>
-
+            <div class="rowPadding">
+                <div class="academicsText">
+                    <h2 class="academicsTitle">Academics</h2>
+                    <p>Academically I have challenged myself by taking hard level 
+                    <br>classes and am currently second in my class. I am by far not
+                    <br>the smartest student in class but through the struggles I have
+                    <br>seen my interest in the career I want to pursue grow. This is how
+                    <br>my interest for computer science started by taking an AP class not
+                    <br>knowing that I'd end up connecting with such an amazing program
+                    <br>and community.
+                    </p>
+                </div>
+                <div class="journalismText">
+                    <h2 class="journalismTitle">Journalism</h2>
+                    <p>This year in my growth as a sports journalist ,for my highschools
+                    <br>newspaper, has given me an in depth knowledge for the love I have
+                    <br>for motorsports. I have gotten the oppurtunity to write artcicles
+                    <br>about the sport and introduce it to many students who don't know
+                    <br>about it.
+                    <br>I had the opportunity to interview two female ESPN, Nicole Briscoe
+                    <br>and Taylor Tannebaum. Having the opportunity to connect with them
+                    <br>gave me so insight about the industry and its sacrifices.
+                    <br>Also, for the May edition of my schools newspaper I interviewed 4
+                    <br>IndyCar drivers for the Indy 500 race and it was such an amazing.
+                    <br>experience. The ability to do such thing as a HS student is incredible.
+                    </p>
+                </div>
+                <div class="programsText">
+                    <h2 class="programsTitle">Programs</h2>
+                    <p>This year I was accepted into the most life-altering program which is
+                    <br>becoming a Catapult at NexTech. This program has taught me so much
+                    <br>in just five weeks than school has in a whole year. Like I built my
+                    <br>own Portfolio all by myself without any major contributing help only
+                    <br>by paying attention and going though a lot of trial and error. This 
+                    <br>project has taught me a lot of patience, resilience,and developing
+                    <br>my coding skills. The people I have met along the way have been nothing
+                    <br>but nice and understanding along the process.
+                    <br> At the end of July I will also be in IU Bloomington attending a
+                    <br>seperate program for HS students wanting to develop their journalism
+                    <br>skills.
+                    </p>
+                </div>
+                <div class="workText">
+                    <h2 class="workTitle">Jobs</h2>
+                    <p>I have also had job experiences that have given me necessary soft skills
+                    <br>that will definitely be a must in college and any career I want to pursue
+                    <br>in the future. 
+                    <br>I currently work at the Freddys Steakburger and Frozen Custard in Speedway
+                    <br>I started there on May 2022 as a team member when they first opened
+                    <br>the restuarant at this location and have since made my way up as a 
+                    <br>Trainer. My current role is training any new employees that are hired and 
+                    <br>teaching them everything there is to know about the job and how to properly
+                    <br>do certain tasks. It's a very demanding and fast-paced job but I like that
+                    <br>aspect of the job.
+                    <br>Communication skills is a key factor in maintaining the job and so is 
+                    <br>hardwork. I have gotten to meet many new friends and coworkers that has 
+                    <br>the job a better atmosphere to be in.
+                    </p>
+                </div>
+            </div>
             <div class="accomplishmentsNavBar">
-                <li class="homeBar1"><a href="homePage">Home</a></li>
-                <li class="abtMeBar1"><a href="abtMePage">About Me</a></li>
-                <li class="hobbiesBar1"><a href="hobbiesPage">Hobbies</a></li>
-                <li class="careerBar1"><a href="careerPage">Career Plans</a></li>
-                <li class="projectsBar1"><a href="projectsPage">Projects</a></li>
+                <li class="homeBar1"><a href="#home">Home</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects">Projects</a></li>
             </div>
         </div>
     </div>
-
+    <div class="hobbiesPage" id="hobbies">
+        <div class="hobbiesPageContent">
+            <h2 class="hobbiesTitle">Hobbies</h2>
+            <!--<img clas="hobbiesPics" src="">-->
+            <div class="rowPadding2">
+                <div class="hobbiesText">
+                    <li class="pad2Text">Band</li>
+                    One of my favorite hobbies to do is being a part of my High Schools Band
+                    we get to do a lot of cool events
+                    <br> and march at the Indy 500 festival every year. The different things we get to do makes it worth the long hours
+                    <br>of practice and hardwork worth it.
+                    <li class="pad2Text">Motorsports Fan</li>
+                    As you may already know I am a huge motorsport fan more specifically F1 and IndyCar
+                    <br>to me this sport has brought me to love even more the community I live in as Speedway is located
+                    <br> just at the center of the heart of the Greatest Spectacle in racing, the IMS.
+                    <li class="pad2Text">Soccer</li>
+                    Now if you don't see me watching a race than i might be seeing a football match
+                    <br>instead because I enjoying playing and watching the sport as well.
+                    <br>I played soccer up until my Junior year of HS until I quit when I needed to work more hours at my job.
+                    <li class="pad2Text">Shows</li>
+                    I am also a huge show lover and like to see all sorts of shows that grasp my attention
+                    <br>if not i also like watching YouTube and seeing what my favorite podcasters are doing.
+                    <li class="pad2Text">Book enthusiast</li>
+                    If you don't know me books are my kryptonite I like to buy books and review them so others can 
+                    <br>also read it. I am trying to grow my book collectiona and hopefully one day have as many books as I can to fill up my room.
+                </div>
+                <div class="skillsText">
+                    <h2 class="skills">Skills</h2>
+                    <li>Java</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>Communication Skills</li>
+                    <li>Teamwork</li>
+                    <li>Leadership</li>
+                </div>
+            </div>
+            <div class="hobbiesNavBar">
+                <li class="homeBar1"><a href="#home">Home</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
+                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="careersPage" id="careers">
+        <div class="careersPageContent">
+            <h2 class="careersTitle">Career Plans</h2> <br><br><br>
+            <div class="rowPadding3">
+                <div class="careerText1">
+                    <h3>Sports Reporter</h3>
+                    <p>Becoming a Sports Reporter is something that I am 
+                        <br>interested in pursuing because I love to talk 
+                        <br>about my favorite sports and inform my friends 
+                        about it am up to date at what happens within
+                        <br>the sport. The traveling aspect with certain Jobs
+                        <br>in the industry is also very cool and that is 
+                        something I want to do visit new places and travel.
+                    </p>
+                </div>
+                <div class="careerText2">
+                    <h3>Motorsports Engineer</h3>
+                    <p>Pursuing a Motorsports Engineering Degree is intriguing to me because
+                    <br>learning and working on such unique cars
+                    for different series is a one of a kind job
+                    <br>that speaks to me. Seeing engineers be a
+                    part of teams in this field is so thrilling and
+                    <br>no day is the same. There is a very small percentage that make up women
+                    in this work field and being a part of that calls to me.
+                    </p>
+                </div>
+                <div class="careerText3">
+                    <h3>CyberSecurity</h3>
+                    <p>Obtaining even a minor in SyberSecurity peaks my interest because knowing
+                    <br>what is happening behind our screens is 
+                    <br>super important in order to keep our private information private.Cybercrimes are common and so is identity
+                    <br>theft by hackers so having and maintaining a safe
+                    <br>online environment for everyone is key for the use of technology.
+                    </p>
+                </div>
+            </div>
+            <div class="careersNavBar">
+                <li class="homeBar1"><a href="#home">Home</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
+                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="projectsPage" id="projects">
+        <div class="projectsPageContent">
+            <h2 class="projectsTitle">Projects</h2>
+            <div class="projectsNavBar">
+                <li class="homeBar1"><a href="#home">Home</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
+            </div>
+        </div>
+    </div>
 
 
 

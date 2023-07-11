@@ -41,10 +41,14 @@ function projectsClick() {
     projectsPage.style.display= "block";
 }
 
-// function contactClick(){
+function contactClick(){
+    let homePage= document.querySelector(".homePage")
+    let contactPage= document.querySelector(".contactPage")
 
-//     homePage.style.display="none";
-// }
+    homePage.style.display="none";
+    contactPage.style.display= "block";
+}
+
 
 
 
@@ -58,6 +62,7 @@ function homeBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="block"
     abtMePage.style.display="none"
@@ -65,6 +70,7 @@ function homeBarClick() {
     hobbiesPage.style.display="none"
     careersPage.style.display="none"
     projectsPage.style.display="none"
+    contactPage.style.display="none"
 }
 
 function accomplishBarClick() {
@@ -74,6 +80,7 @@ function accomplishBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="none"
     abtMePage.style.display="none"
@@ -81,6 +88,7 @@ function accomplishBarClick() {
     hobbiesPage.style.display="none"
     careersPage.style.display="none"
     projectsPage.style.display="none"
+    contactPage.style.display="none"
 }
 
 function abtMeBarClick() {
@@ -90,6 +98,7 @@ function abtMeBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="none"
     abtMePage.style.display="block"
@@ -97,6 +106,7 @@ function abtMeBarClick() {
     hobbiesPage.style.display="none"
     careersPage.style.display="none"
     projectsPage.style.display="none"
+    contactPage.style.display="none"
 }
 function hobbiesBarClick() {
     let homePage= document.querySelector(".homePage")
@@ -105,6 +115,7 @@ function hobbiesBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="none"
     abtMePage.style.display="none"
@@ -112,6 +123,7 @@ function hobbiesBarClick() {
     hobbiesPage.style.display="block"
     careersPage.style.display="none"
     projectsPage.style.display="none"
+    contactPage.style.display="none"
 }
 
 function careersBarClick() {
@@ -121,6 +133,7 @@ function careersBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="none"
     abtMePage.style.display="none"
@@ -128,6 +141,7 @@ function careersBarClick() {
     hobbiesPage.style.display="none"
     careersPage.style.display="block"
     projectsPage.style.display="none"
+    contactPage.style.display="none"
 }
 
 function projectsBarClick() {
@@ -137,6 +151,7 @@ function projectsBarClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
 
     homePage.style.display="none"
     abtMePage.style.display="none"
@@ -144,4 +159,23 @@ function projectsBarClick() {
     hobbiesPage.style.display="none"
     careersPage.style.display="none"
     projectsPage.style.display="block"
+    contactPage.style.display="none"
+}
+
+function contactClick() {
+    let homePage= document.querySelector(".homePage")
+    let abtMePage= document.querySelector(".abtMePage")
+    let accomplishmentsPage= document.querySelector(".accomplishmentsPage")
+    let hobbiesPage= document.querySelector(".hobbiesPage")
+    let careersPage= document.querySelector(".careersPage")
+    let projectsPage= document.querySelector(".projectsPage")
+    let contactPage= document.querySelector(".contactInfo")
+
+    homePage.style.display="none"
+    abtMePage.style.display="none"
+    accomplishmentsPage.style.display="none"
+    hobbiesPage.style.display="none"
+    careersPage.style.display="none"
+    projectsPage.style.display="none"
+    contactPage.style.display="block"
 }

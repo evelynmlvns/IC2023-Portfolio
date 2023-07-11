@@ -107,6 +107,7 @@ h2{
 .sections {
     display: flex;
     justify-content: right;
+    height: 100px;
 }
 
 .sectionsContent {
@@ -146,6 +147,7 @@ h2{
     position: relative;
     top: 200px;
     right: -220px;
+    height: 1000px;
 }
 
 /* Caption text */
@@ -353,7 +355,7 @@ color: white;
 .rowPadding{
     position: relative;
     top: 100px;
-    right: 250px;
+    right: 150px;
 }
 .academicsText{
   font-size: 15px;
@@ -444,6 +446,7 @@ div.desc {
     position: relative;
     top:600px;
     right: 0px;
+    height: 700px;
 }
 
 .hobbiesText{
@@ -519,7 +522,7 @@ div.desc {
     display: flexbox;
 }
 
-/* career galleries its images on this page*/
+/* accomplish galleries its images on this page*/
 div.gallery2 {
     margin: 5px;
     border: 1px solid #ccc;
@@ -530,7 +533,7 @@ div.gallery2 {
     justify-content: center;
     top: 175px;
     position: relative;
-    right: 175px;
+    right: 75px;
 }
 
 div.gallery2:hover {
@@ -588,6 +591,7 @@ div.gallery2 img{
     right: 500px;
     top: 400px;
     font-size: 40px;
+    height: 900px;
 }
 
 .replit{
@@ -595,9 +599,38 @@ div.gallery2 img{
     width: 200px;
 }
 
-
-
-
+/* contact info setup*/
+.contactPage{
+    background-color: white;
+    height: 550px;
+}
+.contactName{
+    text-align: center;
+    font-style: oblique;
+    background-color: aliceblue;
+}
+.emailLabel{
+    background-color: lavender;
+    font-weight: bold;
+    font-size: 45px;
+}
+.emailName{
+    text-align: center;
+    font-size: 20px;
+}
+.phoneNumber{
+    text-align: center;
+    font-size: 20px;
+}
+.phoneLabel{
+    background-color: lavender;
+    font-weight: bold;
+    font-size: 45px;
+}
+.linkedIn{
+    font-size: 45px;
+    text-align: center;
+}
 /*screens displayed when the app is opened
 up at first*/
 .abtMePage{
@@ -613,5 +646,8 @@ up at first*/
     display: none;
 }
 .projectsPage{
+    display: none;
+}
+.contactPage{
     display: none;
 }

@@ -169,7 +169,7 @@ function contactClick() {
     let hobbiesPage= document.querySelector(".hobbiesPage")
     let careersPage= document.querySelector(".careersPage")
     let projectsPage= document.querySelector(".projectsPage")
-    let contactPage= document.querySelector(".contactInfo")
+    let contactPage= document.querySelector(".contactPage")
 
     homePage.style.display="none"
     abtMePage.style.display="none"

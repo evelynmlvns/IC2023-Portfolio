@@ -25,11 +25,17 @@ body{
     font-weight: bold;
     position: relative;
     left: 330px;
-    top: 400px;
+    top: 405px;
     width: 300px;
 }
 
-
+.faceImage{
+    border-radius: 75px;
+    height: 350px;
+    width: 250px;
+    position: relative;
+    right: -350px;
+}
 /* colors for the headers text*/
 
 .abtMe{
@@ -107,7 +113,7 @@ h2{
     width: 200px;
     position: relative;
     right: 410px;
-    /* top: 2px; */
+    top: -375px;
 }
 
 
@@ -131,9 +137,66 @@ h2{
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: -160px;
+    right: -500px;
     border: 4px solid black;
 }
+
+/* abtMePage slideshow of pictures*/
+.slideshow-container{
+    position: relative;
+    top: 200px;
+    right: -220px;
+}
+
+/* Caption text */
+.Text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  
+/* Fading animation */
+.slidesFade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}  
 
 
 /* about me page text displayed*/
@@ -143,8 +206,8 @@ h2{
     height: fit-content;
     width: 600px;
     position: relative;
-    top: 950px;
-    right: 400px;
+    top: 800px;
+    right: 550px;
 }
 
 /* navigation bar content div*/
@@ -157,7 +220,8 @@ h2{
 .navigationBarAbtMePage{
     position: relative;
     top: 0px;
-    width: 205px;
+    right: 0px;
+    width: 330px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -262,7 +326,7 @@ color: white;
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: -150px;
+    right: -350px;
     border: 4px solid black;
 }
 .accomplishmentsPageContent{
@@ -273,12 +337,12 @@ color: white;
 .accomplishmentsNavBar{
     position: relative;
     top: 0px;
-    right: -4px;
-    width: 212px;
+    right: 0px;
+    /* width: px; */
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     writing-mode: vertical-lr;
     text-orientation: mixed;
     height: 1300px;
@@ -289,19 +353,23 @@ color: white;
 .rowPadding{
     position: relative;
     top: 100px;
-    right: 480px;
+    right: 250px;
 }
 .academicsText{
-  display: block;  
+  font-size: 15px;
+  width: 400px;
 }
 .journalismText{
-    display: block;
+    font-size: 15px;
+    width: 400px;
 }
 .programsText{
-;display: block;
+    font-size: 15px;
+    width: 400px;
 }
 .workText{
-   display: block; 
+    font-size: 15px;
+    width: 400px;
 }
 
 
@@ -323,7 +391,7 @@ color: white;
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: -200px;
+    right: -1150px;
     border: 4px solid black;
 }
 .hobbiesPageContent{
@@ -331,15 +399,40 @@ color: white;
     justify-content: right;
 }
 
-.hobbiesNavBar{
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 400px;
+}
+.gal{
+    display: flex ;
+    justify-content: center;
+    top: 175px;
     position: relative;
-    top: 0px;
-    right: -6px;
-    width: 212px;
+    height: 400px;
+    right: -500px;
+    width: 1000px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+  
+div.desc {
+    /* padding: 15px; */
+    text-align: center;
+}
+
+.hobbiesNavBar{
+    width: 720px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     writing-mode: vertical-lr;
     text-orientation: mixed;
     height: 1300px;
@@ -350,11 +443,14 @@ color: white;
 .rowPadding2{
     position: relative;
     top:600px;
-    right: 170px;
+    right: 0px;
 }
 
 .hobbiesText{
     text-align: center;
+    width: 500px;
+    position: relative;
+    right: 400px;
 }
 .pad2Text{
     font-size: 30px;
@@ -364,7 +460,8 @@ color: white;
    background-color: orange;
    width: 200px;
    position: relative;
-   right: -50px;
+   top: -200px;
+   right: -200px;
    border-radius: 10px;
 }
 
@@ -384,7 +481,7 @@ color: white;
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: -475px;
+    right: -100px;
     border: 4px solid black;
 }
 .careersPageContent{
@@ -396,11 +493,11 @@ color: white;
     position: relative;
     top: 0px;
     right: 0px;
-    width: 500px;
+    width: 200px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     writing-mode: vertical-lr;
     text-orientation: mixed;
     height: 1300px;
@@ -422,6 +519,28 @@ color: white;
     display: flexbox;
 }
 
+/* career galleries its images on this page*/
+div.gallery2 {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: right;
+    width: 400px;
+}
+.accomplishGal{
+    justify-content: center;
+    top: 175px;
+    position: relative;
+    right: 175px;
+}
+
+div.gallery2:hover {
+    border: 1px solid #777;
+}
+
+div.gallery2 img{
+    width: 100%;
+    height: 100%;
+}
 
 
 /* Project page content setup (sixth page)*/
@@ -440,7 +559,7 @@ color: white;
     background-color: #B0DDF3;
     position: relative;
     top: 20px;
-    right: 300px;
+    right: -100px;
     border: 4px solid black;
 }
 .projectsPageContent{
@@ -464,9 +583,17 @@ color: white;
     text-align: center;
 }
 
+.projectLinks{
+    position: relative;
+    right: 500px;
+    top: 400px;
+    font-size: 40px;
+}
 
-
-
+.replit{
+    height: 200px;
+    width: 200px;
+}
 
 
 

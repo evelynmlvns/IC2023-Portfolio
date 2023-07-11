@@ -10,21 +10,22 @@
 </head>
 
 <body>
+    <script src="script.js"></script>
     <!--(HOMEPAGE (Book Outline and Index headers)-->
     <div class="homePage" id="home">
         <!--Displayed on the left side of the book page outline-->
         <h1 class="nameTitle">Evelyn Luevanos</h1>
-        <!-- <img src=""> -->
+        <img class="faceImage" src="/images/face.JPG">
 
         <!--Sections for the right side of the book page-->
         <div class="sections">
             <div class="sectionsContent">
-                <h2 class="abtMe" id="abtMeButton">All About Me</h2>
-                <h2 class="accomplishments" id="accomplishmentsButton" >Accomplishments</h2>
-                <h2 class="hobbies" id="hobbiesButton">Hobbies</h2>
-                <h2 class="plans" id="plansButton">Career Plans</h2>
-                <h2 class="projects" id="projectsButton">Projects</h2>
-                <h3 class="contactInfo"><button class="contact">Contact Info</button></h3>
+                <h2 class="abtMe" onclick="aboutPageClick()">All About Me</h2>
+                <h2 class="accomplishments" onclick="accomplishmentsClick()">Accomplishments</h2>
+                <h2 class="hobbies" onclick="hobbiesClick()">Hobbies</h2>
+                <h2 class="plans" onclick="careersClick()">Career Plans</h2>
+                <h2 class="projects" onclick="projectsClick()">Projects</h2>
+                <h3 class="contactInfo"><button class="contact" onclick="contactClick()">Contact Info</button></h3>
             </div>
         </div>
     </div>
@@ -33,9 +34,86 @@
     <div class="abtMePage" id="aboutMe">
         <div class="navBarAbtMeContent">
             <h2 class="abtMeTitle">About Me</h2>
-            <!-- <h3 class="helloText">Hello and Welcome to my Portfolio</h3> -->
-            <!-- <img src=""> -->
-
+            <div class="slideshow-container">
+                <div class="slidesFade" style="display: block;">
+                    <div class="numberText">1/10</div>
+                        <img src="images/img1slideshow.JPG" style="width:500px"; height="500px">
+                    <!-- <div class="Text">Mine</div> -->
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">2/10</div>
+                        <img src="images/img2slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="s" style="display: none;">
+                    <div class="numberText">3/10</div>
+                        <img src="images/img3slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">4/10</div>
+                        <img src="images/img4slideshow.PNG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">5/10</div>
+                        <img src="images/img5slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">6/10</div>
+                        <img src="images/img6slideshow.PNG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">7/10</div>
+                        <img src="images/img7slideshow.PNG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">8/10</div>
+                        <img src="images/img8slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">9/10</div>
+                        <img src="images/img9slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+                <div class="slidesFade" style="display: none;">
+                    <div class="numberText">10/10</div>
+                        <img src="images/img10slideshow.JPG" style="width:500px"; height="500px">
+                    <div class="Text">Mine</div>
+                </div>
+            </div>
+            <!-- <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span>
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div> -->
+              
+            <!-- var slideIndex = 0;
+                showSlides();
+              
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}    
+                    for (i = 0; i < dots.length; i++) {
+                       dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 2200); // Change image every 2 seconds
+                } -->
             <p class="abtMeText"> My name is Evelyn Luevanos and
                 I am currently a rising Senior at Speedway
                 High School. <br><br>
@@ -52,11 +130,11 @@
                 example to young hispanic females. 
             </p>
             <div class="navigationBarAbtMePage">
-                <li class="homeBar1"><a href="#home">Home</a></li>
-                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
-                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
-                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
-                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+                <li class="homeBar1"><a href="#home" onclick="homeBarClick()">Home</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments" onclick="accomplishBarClick()">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies" onclick="hobbiesBarClick()">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers" onclick="careersBarClick()">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects" onclick="projectsBarClick()">Projects</a></li>
             </div>
         </div>
     </div>
@@ -70,74 +148,117 @@
                     <h2 class="academicsTitle">Academics</h2>
                     <p>Academically I have challenged myself by taking hard level 
                     <br>classes and am currently second in my class. I am by far not
-                    <br>the smartest student in class but through the struggles I have
+                    the smartest student in class but through the struggles I have
                     <br>seen my interest in the career I want to pursue grow. This is how
                     <br>my interest for computer science started by taking an AP class not
                     <br>knowing that I'd end up connecting with such an amazing program
-                    <br>and community.
+                    and community.
                     </p>
                 </div>
                 <div class="journalismText">
                     <h2 class="journalismTitle">Journalism</h2>
                     <p>This year in my growth as a sports journalist ,for my highschools
                     <br>newspaper, has given me an in depth knowledge for the love I have
-                    <br>for motorsports. I have gotten the oppurtunity to write artcicles
-                    <br>about the sport and introduce it to many students who don't know
-                    <br>about it.
-                    <br>I had the opportunity to interview two female ESPN, Nicole Briscoe
-                    <br>and Taylor Tannebaum. Having the opportunity to connect with them
-                    <br>gave me so insight about the industry and its sacrifices.
-                    <br>Also, for the May edition of my schools newspaper I interviewed 4
-                    <br>IndyCar drivers for the Indy 500 race and it was such an amazing.
-                    <br>experience. The ability to do such thing as a HS student is incredible.
+                    for motorsports. I have gotten the oppurtunity to write artcicles
+                    about the sport and introduce it to many students who don't know
+                    about it.
+                    I had the opportunity to interview two female ESPN, Nicole Briscoe
+                    and Taylor Tannebaum. Having the opportunity to connect with them
+                    gave me so insight about the industry and its sacrifices.
+                    Also, for the May edition of my schools newspaper I interviewed 4
+                    IndyCar drivers for the Indy 500 race and it was such an amazing.
+                    experience. The ability to do such thing as a HS student is incredible.
                     </p>
                 </div>
                 <div class="programsText">
                     <h2 class="programsTitle">Programs</h2>
                     <p>This year I was accepted into the most life-altering program which is
-                    <br>becoming a Catapult at NexTech. This program has taught me so much
-                    <br>in just five weeks than school has in a whole year. Like I built my
-                    <br>own Portfolio all by myself without any major contributing help only
-                    <br>by paying attention and going though a lot of trial and error. This 
-                    <br>project has taught me a lot of patience, resilience,and developing
-                    <br>my coding skills. The people I have met along the way have been nothing
-                    <br>but nice and understanding along the process.
-                    <br> At the end of July I will also be in IU Bloomington attending a
-                    <br>seperate program for HS students wanting to develop their journalism
-                    <br>skills.
+                    becoming a Catapult at NexTech. This program has taught me so much
+                    in just five weeks than school has in a whole year. Like I built my
+                    own Portfolio all by myself without any major contributing help only
+                    by paying attention and going though a lot of trial and error. This 
+                    project has taught me a lot of patience, resilience,and developing
+                    my coding skills. The people I have met along the way have been nothing
+                    but nice and understanding along the process.
+                    At the end of July I will also be in IU Bloomington attending a
+                    seperate program for HS students wanting to develop their journalism
+                    skills.
                     </p>
                 </div>
                 <div class="workText">
                     <h2 class="workTitle">Jobs</h2>
                     <p>I have also had job experiences that have given me necessary soft skills
-                    <br>that will definitely be a must in college and any career I want to pursue
-                    <br>in the future. 
-                    <br>I currently work at the Freddys Steakburger and Frozen Custard in Speedway
-                    <br>I started there on May 2022 as a team member when they first opened
-                    <br>the restuarant at this location and have since made my way up as a 
-                    <br>Trainer. My current role is training any new employees that are hired and 
-                    <br>teaching them everything there is to know about the job and how to properly
-                    <br>do certain tasks. It's a very demanding and fast-paced job but I like that
-                    <br>aspect of the job.
-                    <br>Communication skills is a key factor in maintaining the job and so is 
-                    <br>hardwork. I have gotten to meet many new friends and coworkers that has 
-                    <br>the job a better atmosphere to be in.
+                    that will definitely be a must in college and any career I want to pursue
+                    in the future. 
+                    I currently work at the Freddys Steakburger and Frozen Custard in Speedway
+                    I started there on May 2022 as a team member when they first opened
+                    the restuarant at this location and have since made my way up as a 
+                    Trainer. My current role is training any new employees that are hired and 
+                    teaching them everything there is to know about the job and how to properly
+                    do certain tasks. It's a very demanding and fast-paced job but I like that
+                    aspect of the job.
+                    Communication skills is a key factor in maintaining the job and so is 
+                    hardwork. I have gotten to meet many new friends and coworkers that has 
+                    the job a better atmosphere to be in.
                     </p>
                 </div>
             </div>
+            <div class="accomplishGal">
+                <div class="gallery2">
+                    <a target="_blank" href="">
+                    <img src="images/Pato.JPG" alt=Pato"" width="450px" height="200">
+                    </a>
+                    <div class="desc">Interviewing Pato O'Ward</div>
+                 </div>
+              
+                <!-- <div class="gallery2">
+                    <a target="_blank" href="">
+                        <img src="images/freddys.JPG" alt="" width="450" height="200">
+                    </a>
+                    <div class="desc">Work</div>
+                </div> -->
+              
+                <div class="gallery2">
+                    <a target="_blank" href="">
+                        <img src="images/Ericson.JPG" alt="" width="450" height="200">
+                    </a>
+                    <div class="desc">Interviewing Marcus Ericson</div>
+                </div>
+            </div>
             <div class="accomplishmentsNavBar">
-                <li class="homeBar1"><a href="#home">Home</a></li>
-                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
-                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
-                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
-                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+                <li class="homeBar1"><a href="#home" onclick="homeBarClick()">Home</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe" onclick="abtMeBarClick()">About Me</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies" onclick="hobbiesBarClick()">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers" onclick="careersBarClick()">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects" onclick="projectsBarClick()">Projects</a></li>
             </div>
         </div>
     </div>
     <div class="hobbiesPage" id="hobbies">
         <div class="hobbiesPageContent">
             <h2 class="hobbiesTitle">Hobbies</h2>
-            <!--<img clas="hobbiesPics" src="">-->
+            <div class="gal">
+                <div class="gallery">
+                    <a target="_blank" href="images/img4slideshow.PNG">
+                    <img src="images/img4slideshow.PNG" alt="Band" width="450px" height="200">
+                    </a>
+                    <div class="desc">Band</div>
+                 </div>
+              
+                <div class="gallery">
+                    <a target="_blank" href="images/race.JPG">
+                        <img src="images/race.JPG" alt="Race Day" width="450" height="200">
+                    </a>
+                    <div class="desc">Race</div>
+                </div>
+              
+                <div class="gallery">
+                    <a target="_blank" href="images/omar.JPG">
+                        <img src="images/omar.JPG" alt="Omar Apollo Concert" width="450" height="200">
+                    </a>
+                    <div class="desc">Omar Apollo Concert</div>
+                </div>
+            </div>
             <div class="rowPadding2">
                 <div class="hobbiesText">
                     <li class="pad2Text">Band</li>
@@ -159,7 +280,7 @@
                     <li class="pad2Text">Book enthusiast</li>
                     If you don't know me books are my kryptonite I like to buy books and review them so others can 
                     <br>also read it. I am trying to grow my book collectiona and hopefully one day have as many books as I can to fill up my room.
-                </div>
+            </div>
                 <div class="skillsText">
                     <h2 class="skills">Skills</h2>
                     <li>Java</li>
@@ -172,11 +293,11 @@
                 </div>
             </div>
             <div class="hobbiesNavBar">
-                <li class="homeBar1"><a href="#home">Home</a></li>
-                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
-                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
-                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
-                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+                <li class="homeBar1"><a href="#home" onclick="homeBarClick()">Home</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments" onclick="accomplishBarClick()">Accomplishments</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe" onclick="abtMeBarClick()">About Me</a></li>
+                <li class="careersBar1"><a href="#careers" onclick="careersBarClick()">Career Plans</a></li>
+                <li class="projectsBar1"><a href="#projects" onclick="projectsBarClick()">Projects</a></li>
             </div>
         </div>
     </div>
@@ -217,31 +338,42 @@
                 </div>
             </div>
             <div class="careersNavBar">
-                <li class="homeBar1"><a href="#home">Home</a></li>
-                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
-                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
-                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
-                <li class="projectsBar1"><a href="#projects">Projects</a></li>
+                <li class="homeBar1"><a href="#home" onclick="homeBarClick()">Home</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments" onclick="accomplishBarClick()">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies" onclick="hobbiesBarClick()">Hobbies</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe" onclick="abtMeBarClick()">About Me</a></li>
+                <li class="projectsBar1"><a href="#projects" onclick="projectsBarClick()">Projects</a></li>
             </div>
         </div>
     </div>
     <div class="projectsPage" id="projects">
         <div class="projectsPageContent">
             <h2 class="projectsTitle">Projects</h2>
+            <div class="projectLinks">
+                <li>
+                    <a href="https://evelyn-unit-2-project-starter-code-3--evelynluevanos.repl.co/">Unit 2 Project</a>
+                    <img class="replit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Code.org_logo.svg/1200px-Code.org_logo.svg.png">
+                </li>
+                <li>
+                    <a href="https://intro-unit-3-starter-code-evelyn--evelynluevanos.repl.co/">Unit 3 Project</a>
+                </li>
+                <li>
+                    <a href="https://unit-5-project--evelynluevanos.repl.co/">Unit 5 Project</a>
+                    <img class="replit" src="https://townsquare.media/site/642/files/2017/10/buzzfeed-quiz.png?w=980&q=75">
+                </li>
+                <li>
+                    <a href="https://studio.code.org/projects/applab/TGeFqmZI93PkT2V_kZ6WPC1LdJsUyZxYlVVmlO-hB70">School Project</a>
+                </li>
+            </div>
             <div class="projectsNavBar">
-                <li class="homeBar1"><a href="#home">Home</a></li>
-                <li class="abtMeBar1"><a href="#aboutMe">About Me</a></li>
-                <li class="accomplishmentsBar1"><a href="#accomplishments">Accomplishments</a></li>
-                <li class="hobbiesBar1"><a href="#hobbies">Hobbies</a></li>
-                <li class="careersBar1"><a href="#careers">Career Plans</a></li>
+                <li class="homeBar1"><a href="#home" onclick="homeBarClick()">Home</a></li>
+                <li class="accomplishmentsBar1"><a href="#accomplishments" onclick="accomplishBarClick()">Accomplishments</a></li>
+                <li class="hobbiesBar1"><a href="#hobbies" onclick="hobbiesBarClick()">Hobbies</a></li>
+                <li class="careersBar1"><a href="#careers" onclick="careersBarClick()">Career Plans</a></li>
+                <li class="abtMeBar1"><a href="#aboutMe" onclick="abtMeBarClick()">About Me</a></li>
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
 
